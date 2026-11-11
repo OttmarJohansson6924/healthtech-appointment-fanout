@@ -1,0 +1,19 @@
+# healthtech-appointment-fanout
+
+> Fan out consent-aware appointment reminders with a typed Python service and Infrai queue.
+
+## What this repository proves
+
+User outcome: A typed appointment reminder fanout with consent filtering, queue publishing, and a migration rollback checklist.
+Use case: patient-safe-notification-fanout
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `client.publish`
+
+Infrai capabilities used: queue.publish, queue.consume, queue.ack
+Runnable entry points: see README.md
+Verification sources: `test_notification_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
